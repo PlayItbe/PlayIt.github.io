@@ -1,0 +1,184 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 40.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1.6rem;
+  background-color: #0f0f0f;
+  color: #fff;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header {
+  margin-bottom: 2em;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+}
+nav {
+  margin-right: -1em;
+}
+ul {
+  display:flex;
+  list-style-type: none;
+}
+nav ul a {
+  position: relative;
+  text-decoration: none;
+  padding: 1em 1.5em;
+  font-family: "Rubik", sans-serif;
+  font-size:2.3rem;
+  text-transform: uppercase;
+  font-weight: bold ;
+  color: #fff;
+  display: inline-block;
+}
+
+nav ul li a::before {
+  content: attr(data-text);
+  -webkit-text-stroke: 1px #D60B52;
+  font-size: 2.3rem;
+  position: absolute;
+  top: 1em;
+  left: 1.5em;
+  color: #D60B52;
+  overflow: hidden;
+  width: 0%;
+}
+nav ul li a:hover::before {
+  width: 100%;
+}
+nav ul li a:hover {
+  color: #D60B52;
+}
+.logo {
+  display: inline-block;
+  width: 10em;
+  margin-top: 20px;
+}
+
+h1,
+p,
+details,
+summary {
+  font-family: "Rubik", sans-serif;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h1 {
+    
+  font-size: 10rem;
+  color: #D60B52;
+  margin: 0;
+}
+.about {
+  -webkit-text-stroke: 2px #D60B52;
+  -webkit-text-fill-color: transparent;
+}
+details {
+  margin-top: 1em;
+  width: 50%;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+summary {
+  width: 70%;
+  color: #D60B52;
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+    }
+
+.organogram {
+  width: 1100px;
+    height: auto;
+    margin-left: -100px;
+    margin-bottom: 100px;
+    margin-top: 2em;
+}
+
+
+.logo:active {
+  rotate: 270deg;
+  transition: rotate 0.15s ease-in-out;
+}
+
+.inleiding {
+  margin-bottom: 1em;
+  margin-top: 0em;
+  font-size: 2rem;
+  max-width: 25em;
+}
+
+::selection {
+  background-color: #D60B52;
+}
+
+h4 {
+  display: none;
+}
+
+footer {
+  z-index: 999;
+  overflow: hidden;
+}  
+
+.about:hover {
+  cursor: default;
+  -webkit-text-fill-color: #D60B52;
+  -webkit-text-stroke: 0.02em #D60B52;
+} 
+.PlayIt{
+  font-size: 2.5rem
+}
+
+footer {
+  box-shadow: 0 0 0 100vmax rgb(0, 0, 0, 0.3);
+  clip-path: inset(0-100vmax);
+  background-color: rgb(0,0,0, 0.3);
+
+  padding: 0;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30.5em;
+}
+footer p {
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 1550px) {
+    
+  nav ul a {
+      padding: 1em 1em;
+     }
+    nav ul li a::before {
+      visibility: hidden; 
+     }   
+     video{
+      width: 40%;
+     }
+    }
+@media only screen and (max-width: 1354px) {
+    
+  nav ul a {
+      padding: 1em 0.5em;
+      font-size: 1em;
+     }
+    nav ul li a::before {
+      visibility: hidden; 
+     }   
+}

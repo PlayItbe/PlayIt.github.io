@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlayIt!</title>
+    <link rel="icon" href="./img/logo zonder tekst.png" />
+    <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"/>
+    
+  </head>
+  <body>
+    <header>
+      <a href="./index.html">
+        <img src="./img/logo.png" class="logo"
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="./index.html" data-text="HOME">Home</a></li>
+          <li><a href="./about/about.html" data-text="ABOUT">About</a></li>
+          <li><a href="./fotoboek/fotoboek.html" data-text="FOTOBOEK">Fotoboek</a></li>
+          <li><a href="./contact/contact.html" data-text="Contact">Contact</a></li>
+
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="container">
+          <div class="tekst-home">
+            <div class="hey-ik-ben">Luca</div>
+            <div class="naam">
+              <span class="PlayIt">P</span>
+              <span class="PlayIt">L</span>
+              <span class="PlayIt">A</span>
+              <span class="PlayIt">Y</span>
+              <span class="PlayIt">I</span>
+              <span class="PlayIt">T</span>
+              <span class="PlayIt">!</span>
+            </div>
+            <a class="btn-home" href="./about/about.html">Leer ons kennen</a>
+          </div>
+          <div class="fotoslider"></div>
+        </div>
+        
+              <section class="section-projecten">
+                <h2>Mijn projecten</h2>
+
+        <div class="projecten-home">
+
+
+          <li class="project-home-li">
+            <a href="./fotoboek/fotoboek.html">
+              <div class="project-change">
+                <h3>Fotoboek</h3>
+              </div>
+              <img
+                width="300"
+                class="headset"
+                src="img/fotoboek/muis.png"
+                alt=""
+              />
+            </a>
+          </li>
+
+          <li class="project-home-li">
+            <a href="./about/about.html">
+              <div class="project-change">
+                <h3>Animatie</h3>
+              </div>
+              <img width="300" src="img/animatie.png" class="muis" />
+            </a>
+          </li>    
+
+          <li class="project-home-li">
+            <a href="./about/about.html">
+              <div class="project-change">
+                <h3 class="project-change-long">Video</h3>
+              </div>
+              <img
+                width="300"
+                height="200"
+                src="img/Video.png" 
+              />
+            </a>
+          </li>
+
+        </div>
+      </section>
+
+        
+      <section class="samenwerken">
+        <h2><span class="samenwerken-tekst"></span> Afspraak maken?</h2>
+        <div class="contact-flex">
+          <p class="afspraak">
+            Wil je samen met je maten gamen? Dat kan! Twijfel niet en maak een afspraak!
+           <br> <span class="totbinnenkort-tekst">Tot binnenkort!</span> </br>
+          </p>
+          <a class="btn-contact" href="mailto: Luca.PlayIt@gmail.com">Afspraak maken</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-p">
+        <p>&copy; 2023 Luca Smets</p>
+      </div>
+      <nav class="socials">
+      </nav>
+    </footer>
+        <!--js for toggle menu-->
+        <script>
+          var MenuItems = document.getElementById("MenuItems");
+  
+          MenuItems.style.maxHeight = "0px";
+  
+          function menutoggle() {
+              if (MenuItems.style.maxHeight == "0px") {
+                  MenuItems.style.maxHeight = "200px";
+              }
+              else {
+                  MenuItems.style.maxHeight = "0px";
+              }
+          }
+      </script>
+  </body>
+</html>

@@ -1,0 +1,548 @@
+@keyframes slider {
+  0% {
+    background-image: url(./img/headset-aangepast.png);
+    background-size: cover;
+  }
+  33% {
+    background: url(./img/toetsenbord-wazig-aangepast.png) no-repeat;
+    background-size: cover;
+  }
+  66% {
+    background: url(./img/beeldschermen-aangepast.png) no-repeat;
+    background-size: cover;
+  }
+  100% {
+    background: url(./img/toetsenbord&muis-aangepast.png);
+    background-size: cover;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 40.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1.6rem;
+  background-color: #0f0f0f;
+  color: #fff;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header {
+  margin-bottom: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav {
+  margin-right: -1em;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+}
+nav ul a {
+  position: relative;
+  text-decoration: none;
+  padding: 1em 1.5em;
+  font-family: "Rubik", sans-serif;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  display: inline-block;
+}
+
+nav ul li a::before {
+  content: attr(data-text);
+  -webkit-text-stroke: 1px #d60b52;
+  font-size: 2.3rem;
+  position: absolute;
+  top: 1em;
+  left: 1.5em;
+  color: #d60b52;
+  overflow: hidden;
+  width: 0%;
+}
+nav ul li a:hover::before {
+  width: 100%;
+}
+nav ul li a:hover {
+  color: #d60b52;
+}
+.logo {
+  display: inline-block;
+  width: 10em;
+  margin-top: 20px;
+}
+
+h1,
+h2,
+p,
+details,
+summary,
+h3 {
+  font-family: "Rubik", sans-serif;
+}
+h1 {
+  display: none;
+}
+.hey-ik-ben,
+.PlayIt,
+h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.hey-ik-ben,
+.PlayIt {
+  font-size: 6.4rem;
+  color: #2e386a;
+  margin: 0;
+}
+details {
+  margin-top: 1em;
+  width: 50%;
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+summary {
+  width: 60%;
+  color: #2e386a;
+  font-size: 5.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+p {
+  font-size: 2.5rem;
+}
+.foto {
+  width: 600px;
+  position: sticky;
+  margin-left: 55%;
+  margin-top: -16%;
+  scale: 1.35;
+  z-index: 0;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.foto:hover,
+.foto:focus-visible {
+  opacity: 0;
+}
+
+.inleiding {
+  margin-top: 0.5em;
+  font-size: 3.8rem;
+  max-width: 20em;
+}
+
+::selection {
+  background-color: #0f0f0f;
+}
+.container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7em;
+  gap: 5em;
+}
+.fotoslider {
+  display: block;
+  width: 75em;
+  height: 25em;
+  border-radius: 2em;
+  animation: slider 15s ease-in-out infinite;
+}
+.hey-ik-ben {
+  display: inline-block;
+  font-size: 11.7rem;
+  font-family: "Rubik", sans-serif;
+  color: #2e386a;
+  margin: 0;
+}
+.section-projecten {
+  padding: 3em 0em;
+  clip-path: inset(0-100vmax);
+}
+.section-projecten h2 {
+  font-size: 6.4rem;
+  margin: 0;
+  margin-left: 10px;
+  color: #2e386a;
+}
+.section-projecten h3 {
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+}
+
+.section-projecten p {
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 0;
+  color: #fff;
+  font-style: italic;
+}
+
+.projecten-home {
+  display: flex;
+  grid-auto-flow: column;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+.projecten-tekst {
+  -webkit-text-stroke: 0.03em #fff;
+  -webkit-text-fill-color: transparent;
+  margin-left: 12px;
+}
+.projecten-tekst {
+  margin-left: 5px;
+}
+.about-us {
+  font-size: 2rem;
+  font-family: "Rubik", sans-serif;
+  line-height: 1, 4;
+}
+
+.projecten-home a {
+  text-decoration: none;
+}
+.btn-home {
+  margin-top: 5em;
+  margin-left: 71%;
+  padding: 0.75em 1em;
+  border-radius: 0.5em;
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  border: 0.2em solid #d60b52;
+}
+.btn-home::after {
+  content: " >>";
+  color: #fff;
+  display: inline-block;
+  margin-left: 0.3em;
+}
+.btn-home:hover {
+  background-color: #d60b52;
+  border: 0.2em solid rgb(255, 255, 255);
+  scale: 102%;
+  transition: scale 0.2s ease-in-out;
+}
+.btn-home:hover::after {
+  transform: translateX(5px);
+  transition: all 0.2s ease-in-out 0s;
+}
+.tekst-home {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+.tekst-home p {
+  text-align: right;
+  line-height: 0;
+}
+.tekst-home .hey-ik-ben,
+.tekst-home .PlayIt {
+  margin: 0;
+  line-height: 0.8;
+}
+
+.project-home-li {
+  height: 19em;
+  border-top: 0.15em solid #d60b52;
+  background-color: #d60b52;
+  cursor: pointer;
+  margin: 0 1em;
+  border-radius: 2em;
+  overflow: hidden;
+  display: inline-block;
+}
+.project-home-li:hover {
+  scale: 1.05;
+}
+.project-home-li h3 {
+  font-size: 1.8rem;
+  border: 0.2em solid #d60b52;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  color: #eee;
+  margin: 0;
+}
+.project-change {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-change h3,
+.project-change p {
+  margin: 0.75em;
+}
+.projecten-home img {
+  position: relative;
+  max-width: 120%;
+  bottom: -0.5em;
+  height: auto;
+}
+
+h3.project-change-long {
+  padding: 0.5em;
+  margin: 0.75em;
+  font-size: 1.8rem;
+}
+.laatste-foto {
+  width: 300px;
+  height: 80%;
+}
+.samenwerken h2 {
+  margin: 0;
+  margin-top: 1.5em;
+  font-size: 6.4rem;
+  color: #2e386a;
+  margin-left: -0.4em;
+}
+.samenwerken p {
+  margin-bottom: 1em;
+  width: 50%;
+  margin-right: 5.7em;
+}
+.contact-flex {
+  padding: 2em 0em;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: -28em;
+  gap: 2em;
+  align-items: center;
+}
+.samenwerken-tekst {
+  -webkit-text-stroke: 0.03em rgb(255, 255, 255);
+  -webkit-text-fill-color: transparent;
+  margin-right: 0.7em;
+}
+
+.afspraak {
+  margin-right: 20em;
+  margin-top: -1em;
+}
+
+.btn-contact {
+  align-items: flex-end;
+  padding: 1em;
+  text-decoration: none;
+  color: #eee;
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  font-weight: bold;
+  border: 0.2em solid #d60b52;
+  border-radius: 0.5em;
+}
+.btn-contact::after {
+  content: ">>";
+  display: inline-block;
+  margin-left: 0.25em;
+}
+.btn-contact:hover::after {
+  transform: translateX(5px);
+  transition: transform 0.2s ease;
+}
+.btn-contact:hover {
+  display: inline-block;
+  background-color: #d60b52;
+  border: 0.2em solid #ffffff;
+  scale: 103%;
+  transition: scale 0.2s ease-in-out;
+}
+.totbinnenkort-tekst {
+  font-weight: bold;
+}
+
+.PlayIt {
+  font-family: "Rubik", sans-serif;
+  font-size: 19rem;
+  -webkit-text-stroke: 0.02em #d60b52;
+  -webkit-text-fill-color: transparent;
+}
+.PlayIt:hover {
+  cursor: default;
+  -webkit-text-fill-color: #d60b52;
+  -webkit-text-stroke: 0.02em #d60b52;
+}
+.naam {
+  display: flex;
+}
+.naam p {
+  margin: 0.4em 0;
+}
+footer {
+  box-shadow: 0 0 0 100vmax rgb(0, 0, 0, 0.3);
+  background-color: rgb(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 0;
+  margin: auto;
+}
+footer p {
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 1550px) {
+  nav ul li a::before {
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 1354px) {
+  nav ul a {
+    padding: 1em 0.5em;
+    font-size: 1em;
+  }
+  nav ul li a::before {
+    visibility: hidden;
+  }
+  .contact-flex {
+    text-align: center;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .logo {
+    display: inline-block;
+    width: 7em;
+    margin-top: 20px;
+  }
+  header{
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .fotoslider{
+    max-width: 80%;
+  }
+
+  body {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .projecten-home {
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+  }
+  .project-home-li {
+    width: 70%;
+  }
+  .projecten-home img {
+    width: 100%;
+    height: auto;
+  }
+
+  .samenwerken {
+    font-size: 1em;
+  }
+
+  .contact-flex {
+    text-align: center;
+    justify-content: center;
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 500px) {
+  header{
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .fotoslider{
+    max-width: 80%;
+  }
+
+  body {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+.tekst-home{
+  margin-left: 13em;
+}
+
+
+  .section-projecten{
+    margin-left: 5em;
+    max-width: 80%;
+  }
+
+  .tekst-home {
+    align-items: center;
+  }
+  .tekst-home p {
+    font-size: 1.5rem;
+  }
+  .btn-home {
+    font-size: 1.5rem;
+    margin-right: 20%;
+    width: 45%;
+  }
+  .hey-ik-ben {
+    width: 100%;
+    font-size: 7rem;
+    margin-right: 30%;
+  }
+  .PlayIt {
+    font-size: 10rem;
+  }
+  .project-home-li {
+    width: 100%;
+  }
+  .contact-flex {
+    gap: 1em;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-projecten h2 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  .samenwerken p {
+    text-align: center;
+    width: 50%;
+    font-size: 2rem;
+    margin-right: -20em;
+  }
+  .samenwerken h2 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  .btn-contact {
+    margin: 0;
+    width: 50%;
+    font-size: 1.5rem;
+    justify-content: center;
+    margin-right: -28em;
+  }
+
+  nav {
+    margin-right: -1em;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+}
