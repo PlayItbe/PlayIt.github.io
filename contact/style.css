@@ -1,0 +1,356 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 40.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1.6rem;
+  background-color: #0f0f0f;
+  color: #fff;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header {
+  margin-bottom: 2em;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+}
+nav {
+  margin-right: -1em;
+}
+ul {
+  display:flex;
+  list-style-type: none;
+}
+nav ul a {
+  position: relative;
+  text-decoration: none;
+  padding: 1em 1.5em;
+  font-family: "Rubik", sans-serif;
+  font-size:2.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  display: inline-block;
+}
+
+nav ul li a::before {
+  content: attr(data-text);
+  -webkit-text-stroke: 1px #D60B52;
+  font-size: 2.3rem;
+  position: absolute;
+  top: 1em;
+  left: 1.5em;
+  color: #D60B52;
+  overflow: hidden;
+  width: 0%;
+}
+nav ul li a:hover::before {
+  width: 100%;
+}
+nav ul li a:hover {
+  color: #D60B52;
+}
+.logo { 
+  display: inline-block;
+  width: 10em;
+  margin-top: 20px;
+}
+
+h1,
+h2,
+p,
+details,
+summary,
+h3 {
+  font-family: "Rubik", sans-serif;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 6.4rem;
+  color: rgb(51, 20, 29);
+  margin: 0;
+}
+details {
+  margin-top: 1em;
+  width: 50%;
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+summary {
+  width: 60%;
+  color: #da0243;
+  font-size: 5.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+p {
+  font-size: 2.5rem;
+}
+
+
+.container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #0f0f0f;
+  border-radius: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.5rem;
+}
+
+.btn-home:hover {
+  background-color: rgb(218, 2, 67);
+  border: 0.2em solid rgb(218, 2, 67);
+  scale: 102%;
+  transition: scale 0.2s ease-in-out;
+}
+
+.tekst-home h1 {
+  margin: 0;
+  line-height: 0.8;
+  font-size: 12rem;
+}
+
+.contact-flex {
+  padding: 3em 0em;
+  display: flex;
+  justify-content: flex-start;
+  gap: 7em;
+  align-items: center;
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 10rem;
+  color: #D60B52;
+  margin: 0;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: "Rubik", sans-serif;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: "Rubik", sans-serif;
+}
+
+form input[type="submit"] {
+  background-color: #da0243;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #2E386A;
+}
+
+footer {
+  box-shadow: 0 0 0 100vmax rgb(0, 0, 0, 0.3);
+  background-color: rgb(0,0,0, 0.3);
+  padding: 0px;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 4.5em;
+}
+footer p {
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 1550px) {
+  nav ul li a::before {
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 1354px) {
+  nav ul a {
+    padding: 1em 0.5em;
+    font-size: 1em;
+  }
+  nav ul li a::before {
+    visibility: hidden;
+  }
+  .contact-flex {
+    text-align: center;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .logo {
+    display: inline-block;
+    width: 7em;
+    margin-top: 20px;
+  }
+  header{
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .fotoslider{
+    max-width: 80%;
+  }
+
+  body {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .projecten-home {
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+  }
+  .project-home-li {
+    width: 70%;
+  }
+  .projecten-home img {
+    width: 100%;
+    height: auto;
+  }
+
+  .samenwerken {
+    font-size: 1em;
+  }
+
+  .contact-flex {
+    text-align: center;
+    justify-content: center;
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 500px) {
+
+  .h1{
+    font-size: 1em;
+  }
+
+  .about{
+    font-size: 1em;
+  }
+
+  .fotoslider{
+    max-width: 80%;
+  }
+
+  body {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+.tekst-home{
+  margin-left: 13em;
+}
+
+
+  .section-projecten{
+    margin-left: 5em;
+    max-width: 80%;
+  }
+
+  .tekst-home {
+    align-items: center;
+  }
+  .tekst-home p {
+    font-size: 1.5rem;
+  }
+
+  .hey-ik-ben {
+    width: 100%;
+    font-size: 7rem;
+    margin-right: 30%;
+  }
+  .PlayIt {
+    font-size: 10rem;
+  }
+  .project-home-li {
+    width: 100%;
+  }
+  .contact-flex {
+    gap: 1em;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-projecten h2 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  .samenwerken p {
+    text-align: center;
+    width: 50%;
+    font-size: 2rem;
+    margin-right: -20em;
+  }
+  .samenwerken h2 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 100%;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  form input,
+  form textarea {
+    margin-bottom: 10px;
+  }
+
+  header{
+    align-items: center;
+    justify-content: center;
+  }
+
+  body {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  nav {
+    margin-right: -1em;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+
+  .logo {
+    display: inline-block;
+    width: 7em;
+    margin-top: 20px;
+  }
+
+  .footer-p{
+    visibility: hidden;
+  }
+}

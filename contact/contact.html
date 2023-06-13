@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <title>Contact</title>
+    <link rel="icon" href="../img/logo zonder tekst.png" />
+    <meta charset="UTF-8"/>
+    <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
+	
+	<link rel="stylesheet" href="../about/style.css" />
+	<link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+<header>
+    <a href="../index.html">
+        <img src="../img/logo.png" class="logo"
+      </a>
+
+     <nav>
+        <ul>
+            <li><a href="../index.html" data-text="HOME">Home</a></li>
+            <li><a href="../about/about.html" data-text="ABOUT">About</a></li>
+            <li><a href="../fotoboek/fotoboek.html" data-text="FOTOBOEK">Fotoboek</a></li>
+            <li><a href="../contact/contact.html" data-text="Contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="section-inleiding">
+      <h1><span class="about">C</span><span class="about">O</span><span class="about">N</span><span class="about">T</span><span class="about">A</span><span class="about">C</span><span class="about">T</span> Us</h1>
+      <p class="inleiding">
+       
+      </p>
+    </section>
+
+    <div class="container">
+      <form id="contact-form" method="post" action="">
+        <label for="naam">Naam:</label>
+        <input type="text" id="naam" name="naam" autocomplete="on" required>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" autocomplete="on"  required>
+  
+        <label for="bericht">Bericht:</label>
+        <textarea id="bericht" name="bericht" rows="5" autocomplete="on" required></textarea>
+  
+        <input type="submit" value="Versturen">
+      </form>
+    </div>
+  
+    <script src="script.js"></script>
+<footer>
+    <div class="footer-p">
+      <p>&copy; 2023 Luca Smets</p>
+    </div>
+    <nav class="socials">
+    </nav>
+  </footer>
+  <link rel="stylesheet" href="">
+</body>
+</html>
